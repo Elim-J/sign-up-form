@@ -1,14 +1,43 @@
+:root {
+    --bg-color: black;
+    --accent-color: #f1c058;
+    --text-color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg-color);
 }
 
+h1, h2, p {
+    color: var(--text-color);
+}
+
+label {
+    color: var(--text-color);
+}
+
+button {
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    background-color: var(--bg-color);
+}
 .container {
   display: flex;
 }
 
 .inputs {
     display: flex;
+    gap: 10px;
+}
+
+.left-inputs, .right-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 img {
