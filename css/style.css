@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  position: relative;
+  
+}
+
+h1, h2 {
+    position: absolute;
+    left: 500px;
+    color: red;
+    margin-top: 0;
+}
+img {
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+}
