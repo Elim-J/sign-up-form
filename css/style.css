@@ -4,18 +4,14 @@ body {
 }
 
 .container {
-  position: relative;
-  
+  display: flex;
 }
 
-h1, h2 {
-    position: absolute;
-    left: 500px;
-    color: red;
-    margin-top: 0;
+.inputs {
+    display: flex;
 }
+
 img {
-    position: absolute;
     width: 500px;
     height: 100vh;
 }
