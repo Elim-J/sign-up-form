@@ -4,12 +4,14 @@
     --text-clr: white;
     --input-border-clr: rgb(77, 77, 77, 1);
     --label-txt-clr: rgb(95,95,95,1);
+    --attrib-clr: #b88c64;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-clr);
+    font-family: 'Roboto Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -28,10 +30,11 @@ form {
 
 h1, h2, p {
     color: var(--text-clr);
+    margin-bottom: 40px;
 }
 
-label {
-    font-size: 12px;
+p{
+    font-size: 20px;
 }
 
 .inputs {
@@ -41,9 +44,13 @@ label {
 
 input {
     width: 80%;
+    height: 1.5rem;
     border: 1px solid var(--input-border-clr);
     background-color: var(--bg-clr);
     border-radius: 3px;
+    color: white;
+    text-indent: 10px;
+    font-size: 1rem;
 }
 
 .left-inputs, .right-inputs {
@@ -55,6 +62,12 @@ input {
 
 label {
     color: var(--label-txt-clr);
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--accent-clr);
 }
 
 button {
@@ -66,7 +79,7 @@ button {
     height: 50px;
     border: 2px solid var(--accent-clr);
     border-radius: 3px;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 a {
@@ -74,6 +87,18 @@ a {
     text-decoration: none;
     font-weight: bolder;
 }
+
+#credits{
+    color: var(--attrib-clr);
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+}
+small a {
+    color: var(--attrib-clr);
+}
+
+
 
 
 
